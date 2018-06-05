@@ -13,7 +13,7 @@ public class Problem3 {
     public static boolean duplicate(int numbers[]) {
         if (numbers == null || numbers.length == 0)
             return false;
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length;) {
             if (i == numbers[i])
                 i++;
             else {
